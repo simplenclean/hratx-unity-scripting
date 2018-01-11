@@ -285,8 +285,6 @@ GameObject:
   - component: {fileID: 1287057557}
   - component: {fileID: 1287057559}
   - component: {fileID: 1287057561}
-  - component: {fileID: 1287057560}
-  - component: {fileID: 1287057562}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -377,17 +375,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20.48, y: 2.5}
   m_EdgeRadius: 0
---- !u!114 &1287057560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1287057556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b98f1bb6d92364e84aed8cbfbb0398, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1287057561
 Rigidbody2D:
   serializedVersion: 4
@@ -408,17 +395,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1287057562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1287057556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3c47247ac899a34f93fb5296b4ed544, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1334255894
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,7 +569,6 @@ GameObject:
   - component: {fileID: 1499912576}
   - component: {fileID: 1499912575}
   - component: {fileID: 1499912578}
-  - component: {fileID: 1499912579}
   - component: {fileID: 1499912580}
   m_Layer: 0
   m_Name: Bird
@@ -717,18 +692,6 @@ PolygonCollider2D:
       - {x: 0.39499998, y: -0.225}
       - {x: 0.545, y: -0.095}
       - {x: 0.565, y: -0.044999998}
---- !u!114 &1499912579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1499912574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ec90f59ce0b9fc4ea1d674761c8dc7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  upForce: 200
 --- !u!95 &1499912580
 Animator:
   serializedVersion: 3
@@ -757,8 +720,6 @@ GameObject:
   - component: {fileID: 1540037786}
   - component: {fileID: 1540037785}
   - component: {fileID: 1540037784}
-  - component: {fileID: 1540037783}
-  - component: {fileID: 1540037787}
   m_Layer: 0
   m_Name: Ground2
   m_TagString: Untagged
@@ -780,17 +741,6 @@ Transform:
   m_Father: {fileID: 2138969735}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1540037783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1540037781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b98f1bb6d92364e84aed8cbfbb0398, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1540037784
 Rigidbody2D:
   serializedVersion: 4
@@ -880,17 +830,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!114 &1540037787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1540037781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3c47247ac899a34f93fb5296b4ed544, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1611943635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,8 +1013,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1823430368}
-  - component: {fileID: 1823430367}
-  - component: {fileID: 1823430369}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -1083,21 +1020,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1823430367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1823430366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2057807f67142434095b796bf85b0399, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverText: {fileID: 1334255894}
-  gameOver: 0
-  scoreText: {fileID: 1960091959}
-  scrollSpeed: -1.5
 --- !u!4 &1823430368
 Transform:
   m_ObjectHideFlags: 0
@@ -1111,23 +1033,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1823430369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1823430366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4db29267ed3bb8049a197f0536bc14f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  columnPoolSize: 5
-  columnPrefab: {fileID: 1485707616196758, guid: abf6e3cc22382a24ea4d6824bfb5f926,
-    type: 2}
-  spawnRate: 4
-  columnMin: -2
-  columnMax: 2
 --- !u!1 &1960091956
 GameObject:
   m_ObjectHideFlags: 0
