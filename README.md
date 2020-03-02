@@ -20,7 +20,7 @@ Feel free to reference the solution branch at any time, which has the scripts fi
 ## Preview
 The end goal of this sprint is to create flappy bird clone that looks like this...
 
-![Preview](https://thumbs.gfycat.com/OrganicAdeptAztecant-size_restricted.gif)
+![Preview](https://bit.ly/3alEVse)
   
 
 ## Adding the game objects
